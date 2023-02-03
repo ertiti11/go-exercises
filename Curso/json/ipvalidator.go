@@ -36,6 +36,9 @@ func main() {
 		fmt.Println(err2)
 	}
 
-	fmt.Println(ips[0].IP)
+	fmt.Println(len(ips))
+	for i:=0; i<len(ips); i++{
+		fmt.Println(ips[i].IP,":",ips[i].Ports[0].Port)
+	}
 
 }
